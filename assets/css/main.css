@@ -351,3 +351,62 @@ div.answer-container div.ans p{
 	font-weight: normal;
 	margin-top: 0px;
 }
+
+@media (min-width: 360px) and (max-width:640px){
+	div.header{
+		overflow: auto;
+	}
+
+	div.header div.left{
+		float: left;
+		padding-left: 0px;
+		font-size: 10px;
+	}
+
+	div.header div.right{
+		float: right;
+		width: 230px;
+		font-size: 10px;
+	}
+
+	div.header div.right ul{
+		margin:0px;
+		padding-top: 15px;
+	}
+
+	div.header div.right ul li{
+		margin-left: 3px;
+	}
+
+	div.header form{
+		display: none;
+	}
+
+	div.content-infomation div.left-side {
+		width: 100%;
+	}
+
+	div.content-infomation div.left-side form input{
+		width: 90%;
+	}
+	
+	div.content-infomation div.left-side form textarea{
+		width: 90%;
+	}
+	div.content-infomation div.left-side h2 {
+		font-size: 15px;
+	}
+
+	div.qns p {
+		font-size: 10px;
+	}
+
+	div.content-infomation div.right-side{
+		width: 100%;
+	}
+
+	div.content-infomation div.right-side .qns-cont .cont p {
+		width: 197px;
+		font-size: 15px;
+	}
+}
