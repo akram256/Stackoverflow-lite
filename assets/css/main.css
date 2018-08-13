@@ -28,7 +28,7 @@ a.login-button{
 	background-color: blue;
 }
 
-div.login-header div.right{
+div.login-header div.right {
 	float: right;
 }
 
@@ -89,6 +89,14 @@ div.login-field input{
 }
 
 div.login-field button{
+	border: 1px solid blue;
+	padding: 8px 10px;
+	border-radius: 5px;
+	width: 100%;
+	background-color: blue;
+	color: white;
+}
+div.login-field input.btn-login {
 	border: 1px solid blue;
 	padding: 8px 10px;
 	border-radius: 5px;
