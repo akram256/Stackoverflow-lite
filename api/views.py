@@ -17,6 +17,5 @@ class GetAllquestion(MethodView):
            return jsonify({'questions':[question for question in self.questions]})
         quiz = [question for question in self.questions if question['question_id'] == question_id]
         return jsonify({'question' : quiz[0]})
-   
-   
+
 
