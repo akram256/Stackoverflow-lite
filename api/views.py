@@ -11,7 +11,7 @@ class GetAllquestion(MethodView):
       ]     
     def get(self,question_id):
         """
-        method for all get requests
+        method for all get requests"
         """
         if question_id == None:
            return jsonify({'questions':[question for question in self.questions]})
