@@ -15,3 +15,4 @@ class GetUrls:
         questions_view = GetAllquestion.as_view('questions')
         question.add_url_rule('/ui/api/questions/', view_func=questions_view, defaults={'question_id': None}, methods=['GET',])
         question.add_url_rule('/ui/api/questions/<int:question_id>', view_func=questions_view, methods=['GET',])
+        question.add_url_rule('/ui/api/questions/', view_func=questions_view, methods=['POST',])
