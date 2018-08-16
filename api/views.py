@@ -17,5 +17,14 @@ class GetAllquestion(MethodView):
            return jsonify({'questions':[question for question in self.questions]})
         quiz = [question for question in self.questions if question['question_id'] == question_id]
         return jsonify({'question' : quiz[0]})
-
-
+    def post(self ):
+        """
+        method for all post requests
+        """
+        if not request.json:
+            return jsonify({'error' : "not a json request"}), 400 
+        else:
+            
+            question= {'author':request.json['author'], 'question' : request.json['question'], 'question_id':request.json['question_id']}
+            self.questions.append(question)
+            return jsonify({'questions' : self.questions})
