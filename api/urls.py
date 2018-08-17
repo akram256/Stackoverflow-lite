@@ -1,7 +1,7 @@
 """
 Module decorates views to urls
 """
-from views import GetAllquestion
+from views import GetAllquestion, GetAllanswers
 
 class GetUrls:
     """
@@ -16,3 +16,4 @@ class GetUrls:
         question.add_url_rule('/ui/api/questions/', view_func=questions_view, defaults={'question_id': None}, methods=['GET',])
         question.add_url_rule('/ui/api/questions/<int:question_id>', view_func=questions_view, methods=['GET',])
         question.add_url_rule('/ui/api/questions/', view_func=questions_view, methods=['POST',])
+        question.add_url_rule('/ui/api/questions/<int:question_id>/answers/', view_func=GetAllanswers.as_view('answer'),defaults={'question_id': None},  methods=['POST',])
