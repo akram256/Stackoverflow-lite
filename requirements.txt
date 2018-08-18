@@ -28,7 +28,6 @@ lockfile==0.12.2
 MarkupSafe==1.0
 mccabe==0.6.1
 more-itertools==4.2.0
-mysql-utilities==1.6.1
 ndg-httpsclient==0.4.0
 netifaces==0.10.4
 paramiko==1.16.0
