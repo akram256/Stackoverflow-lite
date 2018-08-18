@@ -2,7 +2,6 @@ import unittest
 import json
 from app import APP
 
-
 class TestViews(unittest.TestCase):
     """
     Class defines test cases for gets and posts
