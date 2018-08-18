@@ -1,7 +1,5 @@
 import unittest
 import json
-
-
 from app import APP
 
 
