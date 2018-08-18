@@ -48,7 +48,6 @@ pylint==1.9.2
 pyodbc==3.0.7
 pyOpenSSL==0.15.1
 pysmbc==1.0.15.5
-pysqlite==2.7.0
 pytest==3.6.1
 pytest-cov==2.5.1
 python-apt==1.1.0b1
