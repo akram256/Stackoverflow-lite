@@ -58,7 +58,6 @@ simplejson==3.8.1
 singledispatch==3.4.0.3
 six==1.10.0
 SQLAlchemy==1.2.8
-tortoisehg==3.7.3
 twilio==6.14.3
 urllib3==1.13.1
 virtualenv==16.0.0
