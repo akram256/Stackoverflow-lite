@@ -34,6 +34,7 @@ class TestViews(unittest.TestCase):
         self.assertIn('question', str(result.data))
 
     def test_post(self):
+
         result = self.client().post('/api/questions/3/answers', content_type="application/json",
         data=json.dumps(dict( author="mukasa", question="what is boot camp?",question_id=4,answer="boot camp is process to andela")))
 
