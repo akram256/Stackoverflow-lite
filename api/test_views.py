@@ -14,14 +14,13 @@ class TestViews(unittest.TestCase):
 
     def test_get(self):
 
-
         result = self.client().get('/api/questions/')
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["questions"])
         
     def test_get(self):
 
-        result = self.client().get('/api/questions/2')
+        result = self.client().get('/api/questions/2/')
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["question"])
 
