@@ -2,7 +2,7 @@
 This is the main module
 """
 from flask import Flask
-from url import GetUrls
+from urls import GetUrls
 APP = Flask(__name__)
 APP.env = 'development'
 APP.testing = True
