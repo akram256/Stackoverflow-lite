@@ -32,8 +32,8 @@ class GetAllquestion(MethodView):
 class GetAllanswers(MethodView):
     """ class for getting all answers"""
     answers = [{"author":"Mukasa", "answer":"Andela is a software agency", "question_id":4},
-               {"author":"Natasha", "answer":"technology has easied life", "question_id":6},
-               {"author":"Axsam", "answer":"i like andela", "question_id":5}]
+               {"author":"Natasha", "answer":"technology has easied life", "question_id":5},
+               {"author":"Axsam", "answer":"i like andela", "question_id":6}]
     def post(self, question_id):
         """ method for all post answers"""
         if not request.json:
