@@ -44,7 +44,6 @@ pycurl==7.43.0
 Pygments==2.1
 PyJWT==1.6.4
 pylint==1.9.2
-pyodbc==3.0.7
 pyOpenSSL==0.15.1
 pytest==3.6.1
 pytest-cov==2.5.1
