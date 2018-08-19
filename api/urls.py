@@ -16,7 +16,7 @@ class GetUrls:
         question.add_url_rule('/api/questions/',
                               view_func=questions_view, defaults={'question_id': None},
                               methods=['GET',])
-        question.add_url_rule('/api/questions/<int:question_id>',
+        question.add_url_rule('/api/questions/<int:question_id>/',
                               view_func=questions_view, methods=['GET',])
         question.add_url_rule('/api/questions/',
                               view_func=questions_view, methods=['POST',])
