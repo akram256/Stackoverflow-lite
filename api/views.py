@@ -31,15 +31,15 @@ class GetAllquestion(MethodView):
 
 class GetAllanswers(MethodView):
     """ class for getting all answers"""
-    answers = [{"author":"Mukasa", "answer":"Andela is a software agency", "question_id":4},
-               {"author":"Natasha", "answer":"technology has easied life", "question_id":5},
-               {"author":"Axsam", "answer":"i like andela", "question_id":6}]
+    answers = [{"author":"Mukasa", "answer":"Andela is a software agency", "answer_id":4},
+               {"author":"Natasha", "answer":"technology has easied life", "answer_id":5},
+               {"author":"Axsam", "answer":"i like andela", "answer_id":6}]
     def post(self, question_id):
         """ method for all post answers"""
         if not request.json:
             return jsonify({'error':"not a json request"}), 400
         else:
             answer = {'author':request.json['author'], 'answer' :request.json['answer'],
-                      'question_id':question_id}
+                      'answer_id':question_id}
             self.answers.append(answer)
             return jsonify({'answers' : self.answers})
