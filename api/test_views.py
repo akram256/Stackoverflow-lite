@@ -14,19 +14,19 @@ class TestViews(unittest.TestCase):
 
     def test_get(self):
 
-        result = self.client().get('/api/questions/')
+        result = self.client().get('/api/v1/questions/')
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["questions"])
         
     def test_get(self):
 
-        result = self.client().get('/api/questions/2/')
+        result = self.client().get('/api/v1/questions/2/')
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["question"])
 
     def test_post(self):
 
-        result = self.client().post('/api/questions/', content_type="application/json", data=json.dumps(
+        result = self.client().post('/api/v1/questions/', content_type="application/json", data=json.dumps(
             dict(author="natasha", question="what is boot camp",question_id="1",)))
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["questions"])
@@ -34,7 +34,7 @@ class TestViews(unittest.TestCase):
 
     def test_post(self):
 
-        result = self.client().post('/api/questions/3/answers', content_type="application/json",
+        result = self.client().post('/api/v1/questions/3/answers', content_type="application/json",
         data=json.dumps(dict( author="mukasa", question="what is boot camp?",question_id=4,answer="boot camp is process to andela")))
 
         

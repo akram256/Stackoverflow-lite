@@ -13,13 +13,13 @@ class GetUrls:
         Method that views with urls
         """
         questions_view = GetAllquestion.as_view('questions')
-        question.add_url_rule('/api/questions/',
+        question.add_url_rule('/api/v1/questions/',
                               view_func=questions_view, defaults={'question_id': None},
                               methods=['GET',])
-        question.add_url_rule('/api/questions/<int:question_id>/',
+        question.add_url_rule('/api/v1/questions/<int:question_id>/',
                               view_func=questions_view, methods=['GET',])
-        question.add_url_rule('/api/questions/',
+        question.add_url_rule('/api/v1/questions/',
                               view_func=questions_view, methods=['POST',])
-        question.add_url_rule('/api/questions/<int:question_id>/answers/',
+        question.add_url_rule('/api/v1/questions/<int:question_id>/answers/',
                               view_func=GetAllanswers.as_view('answer'),
                               defaults={'question_id': None}, methods=['POST',])
