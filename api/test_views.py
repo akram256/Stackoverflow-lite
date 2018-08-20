@@ -18,13 +18,13 @@ class TestViews(unittest.TestCase):
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["questions"])
         
-    def test_get(self):
+    def test_getanswer(self):
 
         result = self.client().get('/api/v1/questions/2/')
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["question"])
 
-    def test_post(self):
+    def test_postquestion(self):
 
         result = self.client().post('/api/v1/questions/', content_type="application/json", data=json.dumps(
             dict(author="natasha", question="what is boot camp",question_id="1",)))
