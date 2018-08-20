@@ -15,7 +15,6 @@ class TestViews(unittest.TestCase):
     def test_get(self):
 
         result = self.client().get('/api/v1/questions/')
-        self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["questions"])
         
     def test_getanswer(self):
