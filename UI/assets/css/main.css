@@ -44,7 +44,9 @@ div.login-content{
 div.login-section{
 	margin: 5% 35%;
 	width: 25%;
-	padding: 10px 5px;
+	padding: 15px 5px;
+	border: 1px solid blue;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 div.login-section div.login-circle{
@@ -65,15 +67,17 @@ div.login-section div.login-circle p{
 div.login-section h2{
 	margin: 0px 0px;
 	text-align: center;
+	color: white;
 }
 
 div.login-section p.txt{
 	margin: 5px 0px;
 	text-align: center;	
+	color: white;
 }
 
 div.login-section div.login-field{
-	background-color: white;
+	/*background-color: white;*/
 	width: 70%;
 	margin-left: 35px;
 	border: 1px solid silver;
@@ -116,10 +120,13 @@ div.login-section p.down{
 	margin-left: 40px;
 	overflow: auto;
 	padding: 10px;
+	padding-bottom: 0px;
+	margin-bottom: 0px; 
 }
 
 div.login-section p.down a{
 	text-decoration:none;
+	color: white;
 }
 
 div.login-section p.down a.lft{
