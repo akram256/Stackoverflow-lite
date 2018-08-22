@@ -28,9 +28,13 @@ Stackoverflow is a question answering platform, this is where someones asks a qu
  **API end points**
 
 GET /api/v1/questions
+
 GET /api/v1/questions/<questionId>
+
 POST /api/v1/questions/<questionId>/answers
+
 POST /api/v1/users/questions
+
 
 **Getting Started**
 
