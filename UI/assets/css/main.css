@@ -38,6 +38,7 @@ div.login-content{
 	height: 100%;
 	position: fixed;
 	left: 0%;
+	background-image: url("../images/12.jpg");
 }
 
 div.login-section{
