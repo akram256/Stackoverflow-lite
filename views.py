@@ -1,3 +1,4 @@
+
 """end points for the questions"""
 from flask import jsonify
 from flask import request, Request
@@ -5,10 +6,7 @@ from flask.views import MethodView
 
 class GetAllquestion(MethodView):
     """class for getting questions"""
-    questions = [
-        {"author":"Akram", "question":"how long is boot camp", "question_id":1},
-        {"author":"Mukasa", "question":"what is Andela", "question_id":2},
-        {"author":"Natasha", "question":"what is the use of pip freeze", "question_id":3}]
+    questions = []
 
     def get(self, question_id):
         """
@@ -31,9 +29,7 @@ class GetAllquestion(MethodView):
 
 class GetAllanswers(MethodView):
     """ class for getting all answers"""
-    answers = [{"author":"Mukasa", "answer":"Andela is a software agency", "question_id":1},
-               {"author":"Natasha", "answer":"technology has easied life", "question_id":2},
-               {"author":"Axsam", "answer":"i like andela", "question_id":3}]
+    answers = []
     def post(self, question_id):
         """ method for all post answers"""
         if not request.json:
