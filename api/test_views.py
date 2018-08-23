@@ -14,7 +14,7 @@ class TestViews(unittest.TestCase):
     """
     methods defines test cases for get all questions
     """
-    def test_get(self):
+    def test_getallquestions(self):
 
         result = self.client().get('/api/v1/questions/')
         self.assertEqual(result.status_code,200)
@@ -24,7 +24,7 @@ class TestViews(unittest.TestCase):
     methods defines test cases for get a question
     """
         
-    def test_getquestion(self):
+    def test_getaquestion(self):
 
         result = self.client().get('/api/v1/questions/2')
         self.assertEqual(result.status_code,301)
