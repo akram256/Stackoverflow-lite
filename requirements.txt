@@ -24,10 +24,6 @@ lockfile==0.12.2
 lz4==0.7.0
 MarkupSafe==1.0
 matplotlib==1.5.1
-mayavi==4.4.3
-mccabe==0.6.1
-mercurial==3.7.3
-more-itertools==4.2.0
 mpi4py==1.3.1
 msgpack-python==0.4.6
 mysql-connector-python==2.0.4
